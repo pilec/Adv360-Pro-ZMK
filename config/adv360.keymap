@@ -33,7 +33,7 @@
         ampersand: ampersand {
             compatible = "zmk,behavior-mod-morph";
             label = "AMPERSAND";
-            bindings = <&kp N7>, <&none>;
+            bindings = <&kp N7>, <&kp C>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;

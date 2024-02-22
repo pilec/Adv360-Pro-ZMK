@@ -37,6 +37,8 @@
         ampersand {
             bindings = <&ampersand>;
             key-positions = <73 66>;
+            slow-release;
+            timeout-ms = <50>;
         };
 
         testing {

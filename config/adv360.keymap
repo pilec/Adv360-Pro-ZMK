@@ -29,30 +29,23 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        ampersand: ampersand {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AMPERSAND";
+            bindings = <&kp N7>, <&none>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        ampersand {
-            bindings = <&ampersand>;
-            key-positions = <73 66>;
-            slow-release;
-            timeout-ms = <50>;
-        };
-
         testing {
             bindings = <&kp A>;
             key-positions = <34>;
-        };
-    };
-
-    macros {
-        ampersand: ampersand {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp M &kp G &kp SPACE &kp I &kp T &kp SPACE &kp W &kp O &kp R &kp K &kp S &kp EXCL &kp LA(LC(C))>;
-            label = "AMPERSAND";
         };
     };
 

@@ -36,7 +36,12 @@
 
         ampersand {
             bindings = <&ampersand>;
-            key-positions = <9 66>;
+            key-positions = <73>;
+        };
+
+        testing {
+            bindings = <&kp A>;
+            key-positions = <34>;
         };
     };
 

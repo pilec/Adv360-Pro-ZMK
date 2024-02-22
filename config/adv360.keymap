@@ -37,6 +37,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
         };
     };
 

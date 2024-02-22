@@ -36,8 +36,8 @@
             bindings = <&kp N7>, <&kp C>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
-            keep-mods = <(MOD_LALT)>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_RALT)>;
         };
     };
 

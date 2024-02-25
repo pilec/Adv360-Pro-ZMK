@@ -37,8 +37,113 @@
         ampersand: ampersand {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(C) &kp T &kp H &kp E &kp R &kp E &kp SPACE &kp I &kp S &kp SPACE &kp A &kp SPACE &kp S &kp U &kp P &kp E &kp R &kp SPACE &kp L &kp O &kp N &kp G &kp SPACE &kp M &kp A &kp C &kp R &kp O &kp SPACE &kp A &kp F &kp T &kp E &kp R &kp W &kp A &kp R &kp D &kp S>;
+            bindings = <&kp RA(C)>;
             label = "AMPERSAND";
+        };
+
+        star: star {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(SLASH)>;
+            label = "STAR";
+        };
+
+        dollar: dollar {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(SEMI)>;
+            label = "DOLLAR";
+        };
+
+        tilda: tilda {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(LS(NUMBER_1))>;
+            label = "TILDA";
+        };
+
+        caret: caret {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(NUMBER_3) &kp SPACE &kp BACKSPACE>;
+            label = "CARET";
+        };
+
+        at: at {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(LS(V))>;
+            label = "AT";
+        };
+
+        hash: hash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(X)>;
+            label = "HASH";
+        };
+
+        pipe: pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(W)>;
+            label = "PIPE";
+        };
+
+        backslash: backslash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(Q)>;
+            label = "BACKSLASH";
+        };
+
+        openingCascet: openingCascet {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(F)>;
+            label = "OPENINGCASCET";
+        };
+
+        closingCascet: closingCascet {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(G)>;
+            label = "CLOSINGCASCET";
+        };
+
+        openingBracket: openingBracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(B)>;
+            label = "OPENINGBRACKET";
+        };
+
+        closingBracket: closingBracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N)>;
+            label = "CLOSINGBRACKET";
+        };
+
+        backtick: backtick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(NUMBER_7)>;
+            label = "BACKTICK";
+        };
+
+        lessThan: lessThan {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(COMMA)>;
+            label = "LESSTHAN";
+        };
+
+        greatThen: greatThen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(DOT)>;
+            label = "GREATTHEN";
         };
     };
 
@@ -48,7 +153,7 @@
         default_layer {
             bindings = <
 &kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                          &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &ampersand                                                      &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &kp GRAVE                                                       &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &kp INSERT  &kp LCTRL  &kp DELETE      &kp LGUI   &kp LEFT_ALT  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                          &kp HOME        &kp PG_UP                           &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &mo 2      &kp GRAVE  &kp PIPE  &kp LEFT  &kp RIGHT          &kp BSPC    &mo 4      &kp END         &kp PG_DN  &kp ENTER     &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
@@ -87,11 +192,11 @@
 
         alt-gr {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &ampersand  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans      &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans      &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans      &trans  &trans  &trans  &trans
+&trans  &at     &trans  &hash   &dollar  &trans  &trans                                      &trans  &caret  &ampersand  &star      &openingBracket  &closingBracket  &trans
+&trans  &trans  &trans  &trans  &trans   &trans  &trans                                      &trans  &trans  &trans      &trans     &trans           &trans           &trans
+&trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans      &trans     &trans           &trans           &trans
+&trans  &trans  &trans  &trans  &trans   &trans                  &trans      &trans                  &trans  &trans      &lessThan  &greatThen       &trans           &trans
+&trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans      &trans  &trans  &trans          &trans      &trans     &openingCascet   &closingCascet   &trans
             >;
         };
     };

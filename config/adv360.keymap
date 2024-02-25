@@ -58,7 +58,7 @@
         tilda: tilda {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(LS(NUMBER_1))>;
+            bindings = <&kp RA(NUMBER_1)>;
             label = "TILDA";
         };
 
@@ -72,7 +72,7 @@
         at: at {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(LS(V))>;
+            bindings = <&kp RA(V)>;
             label = "AT";
         };
 
@@ -192,7 +192,7 @@
 
         alt-gr {
             bindings = <
-&trans  &trans      &at     &hash   &dollar  &trans  &trans                                      &trans  &caret  &ampersand  &star      &openingBracket  &closingBracket  &trans
+&trans  &trans      &at     &hash   &dollar  &tilda  &trans                                      &trans  &caret  &ampersand  &star      &openingBracket  &closingBracket  &trans
 &trans  &backslash  &pipe   &trans  &trans   &trans  &trans                                      &trans  &trans  &trans      &trans     &trans           &trans           &trans
 &trans  &trans      &trans  &trans  &trans   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans      &trans     &trans           &trans           &trans
 &trans  &trans      &trans  &trans  &trans   &trans                  &trans      &trans                  &trans  &trans      &lessThan  &greatThen       &trans           &trans

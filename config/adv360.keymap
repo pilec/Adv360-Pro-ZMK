@@ -65,7 +65,7 @@
         caret: caret {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(NUMBER_3) &kp SPACE &kp BACKSPACE>;
+            bindings = <&kp RA(NUMBER_3) &kp SPACE>;
             label = "CARET";
         };
 
@@ -192,11 +192,11 @@
 
         alt-gr {
             bindings = <
-&trans  &at     &trans  &hash   &dollar  &trans  &trans                                      &trans  &caret  &ampersand  &star      &openingBracket  &closingBracket  &trans
-&trans  &trans  &trans  &trans  &trans   &trans  &trans                                      &trans  &trans  &trans      &trans     &trans           &trans           &trans
-&trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans      &trans     &trans           &trans           &trans
-&trans  &trans  &trans  &trans  &trans   &trans                  &trans      &trans                  &trans  &trans      &lessThan  &greatThen       &trans           &trans
-&trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans      &trans  &trans  &trans          &trans      &trans     &openingCascet   &closingCascet   &trans
+&trans  &trans      &at     &hash   &dollar  &trans  &trans                                      &trans  &caret  &ampersand  &star      &openingBracket  &closingBracket  &trans
+&trans  &backslash  &pipe   &trans  &trans   &trans  &trans                                      &trans  &trans  &trans      &trans     &trans           &trans           &trans
+&trans  &trans      &trans  &trans  &trans   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans      &trans     &trans           &trans           &trans
+&trans  &trans      &trans  &trans  &trans   &trans                  &trans      &trans                  &trans  &trans      &lessThan  &greatThen       &trans           &trans
+&trans  &trans      &trans  &trans  &trans           &trans  &trans  &trans      &trans  &trans  &trans          &trans      &trans     &openingCascet   &closingCascet   &trans
             >;
         };
     };

@@ -37,7 +37,7 @@
         ampersand: ampersand {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(C) &kp T &kp H &kp E &kp R &kp E &kp SPACE &kp I &kp S &kp SPACE &kp A &kp SPACE &kp S &kp U &kp P &kp E &kp R &kp SPACE &kp L &kp O &kp N &kp G &kp SPACE &kp M &kp A &kp C &kp R &kp O &kp SPACE &kp A &kp F &kp T &kp E &kp R &kp W &kp A &kp R &kp D &kp S>;
+            bindings = <&kp RA(C) &kp T &kp H &kp E &kp R &kp E &kp SPACE &kp I &kp S &kp SPACE &kp A &kp SPACE &kp S &kp U &kp P &kp E &kp R &kp SPACE &kp L &kp O &kp N &kp G &kp SPACE &kp M &kp A &kp C &kp R &kp O &kp SPACE &kp A &kp F &kp T &kp E &kp R &kp W &kp A &kp R &kp D &kp S>;
             label = "AMPERSAND";
         };
     };

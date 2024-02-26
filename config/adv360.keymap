@@ -145,6 +145,13 @@
             bindings = <&kp RA(DOT)>;
             label = "GREATTHEN";
         };
+
+        switch: switch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(TAB)>;
+            label = "SWITCH";
+        }
     };
 
     keymap {
@@ -193,7 +200,7 @@
         alt-gr {
             bindings = <
 &trans  &trans      &at     &hash   &dollar  &tilda  &trans                                      &trans  &caret  &ampersand  &star      &openingBracket  &closingBracket  &trans
-&trans  &backslash  &pipe   &trans  &trans   &trans  &trans                                      &trans  &trans  &trans      &trans     &trans           &trans           &trans
+&switch  &backslash  &pipe   &trans  &trans   &trans  &trans                                      &trans  &trans  &trans      &trans     &trans           &trans           &trans
 &trans  &trans      &trans  &trans  &trans   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans      &trans     &trans           &trans           &trans
 &trans  &trans      &trans  &trans  &trans   &trans                  &trans      &trans                  &trans  &trans      &lessThan  &greatThen       &trans           &trans
 &trans  &trans      &trans  &trans  &trans           &trans  &trans  &trans      &trans  &trans  &trans          &trans      &trans     &openingCascet   &closingCascet   &trans

@@ -42,6 +42,106 @@
             mods = <(MOD_RALT)>;
             keep-mods = <(MOD_RALT)>;
         };
+
+        remap_star: remap_star {
+            compatible = "zmk,behavior-mod-morph";
+            label = "REMAP_STAR";
+            bindings = <&kp NUMBER_8>, <&kp C>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_RALT)>;
+        };
+
+        remap_dollar: remap_dollar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "REMAP_DOLLAR";
+            bindings = <&kp NUMBER_4>, <&kp SEMI>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_RALT)>;
+        };
+
+        remap_tilda: remap_tilda {
+            compatible = "zmk,behavior-mod-morph";
+            label = "REMAP_TILDA";
+            bindings = <&kp NUMBER_5>, <&kp NUMBER_1>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_RALT)>;
+        };
+
+        remap_caret: remap_caret {
+            compatible = "zmk,behavior-mod-morph";
+            label = "REMAP_CARET";
+            bindings = <&kp NUMBER_6>, <&kp NUMBER_3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_RALT)>;
+        };
+
+        remap_hash: remap_hash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "REMAP_HASH";
+            bindings = <&kp NUMBER_3>, <&kp X>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_RALT)>;
+        };
+
+        remap_at: remap_at {
+            compatible = "zmk,behavior-mod-morph";
+            label = "REMAP_AT";
+            bindings = <&kp NUMBER_2>, <&kp X>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_RALT)>;
+        };
+
+        remap_opening_cascet: remap_opening_cascet {
+            compatible = "zmk,behavior-mod-morph";
+            label = "REMAP_OPENING_CASCET";
+            bindings = <&kp LEFT_BRACKET>, <&kp F>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_RALT)>;
+        };
+
+        remap_closing_cascet: remap_closing_cascet {
+            compatible = "zmk,behavior-mod-morph";
+            label = "REMAP_CLOSING_CASCET";
+            bindings = <&kp RIGHT_BRACKET>, <&kp G>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_RALT)>;
+        };
+
+        remap_opening_bracket: remap_opening_bracket {
+            compatible = "zmk,behavior-mod-morph";
+            label = "REMAP_OPENING_BRACKET";
+            bindings = <&kp NUMBER_9>, <&kp G>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_RALT)>;
+        };
+
+        remap_closing_bracket: remap_closing_bracket {
+            compatible = "zmk,behavior-mod-morph";
+            label = "REMAP_CLOSING_BRACKET";
+            bindings = <&kp NUMBER_0>, <&kp G>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_RALT)>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };

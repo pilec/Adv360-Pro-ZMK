@@ -32,16 +32,19 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-    };
 
-    combos {
-        compatible = "zmk,combos";
+        remap_ampersand: remap_ampersand {
+            compatible = "zmk,behavior-mod-morph";
+            label = "REMAP_AMPERSAND";
+            bindings = <&kp NUMBER_7>, <&kp C>;
 
-        testing {
-            bindings = <&kp RA(C)>;
-            key-positions = <66 9>;
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_RALT)>;
         };
     };
+
+    combos { compatible = "zmk,combos"; };
 
     macros {
         ampersand: ampersand {

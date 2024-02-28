@@ -46,7 +46,7 @@
         remap_star: remap_star {
             compatible = "zmk,behavior-mod-morph";
             label = "REMAP_STAR";
-            bindings = <&kp NUMBER_8>, <&kp C>;
+            bindings = <&kp NUMBER_8>, <&kp SEMI>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
@@ -96,7 +96,7 @@
         remap_at: remap_at {
             compatible = "zmk,behavior-mod-morph";
             label = "REMAP_AT";
-            bindings = <&kp NUMBER_2>, <&kp X>;
+            bindings = <&kp NUMBER_2>, <&kp V>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
@@ -136,7 +136,7 @@
         remap_closing_bracket: remap_closing_bracket {
             compatible = "zmk,behavior-mod-morph";
             label = "REMAP_CLOSING_BRACKET";
-            bindings = <&kp NUMBER_0>, <&kp G>;
+            bindings = <&kp NUMBER_0>, <&kp N>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
@@ -272,11 +272,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &remap_at  &remap_hash  &remap_dollar  &remap_tilda  &tog 1                                                          &mo 3      &remap_caret  &remap_ampersand  &remap_star  &remap_opening_bracket  &remap_closing_cascet  &kp MINUS
-&kp TAB    &kp Q      &kp W      &kp E        &kp R          &kp T         &kp GRAVE                                                       &none      &kp Y         &kp U             &kp I        &kp O                   &kp P                  &kp BSLH
-&kp ESC    &kp A      &kp S      &kp D        &kp F          &kp G         &kp INSERT  &kp LCTRL  &kp DELETE      &kp LGUI   &kp LEFT_ALT  &none      &kp H         &kp J             &kp K        &kp L                   &kp SEMI               &kp SQT
-&kp LSHFT  &kp Z      &kp X      &kp C        &kp V          &kp B                                &kp HOME        &kp PG_UP                           &kp N         &kp M             &kp COMMA    &kp DOT                 &kp FSLH               &kp RSHFT
-&mo 2      &backtick  &kp PIPE   &kp LEFT     &kp RIGHT                    &kp BSPC    &kp RALT   &kp END         &kp PG_DN  &kp ENTER     &kp SPACE                &kp UP            &kp DOWN     &remap_opening_cascet   &remap_closing_cascet  &mo 2
+&kp EQUAL  &kp N1     &remap_at  &remap_hash  &remap_dollar  &remap_tilda  &tog 1                                                          &mo 3      &remap_caret  &remap_ampersand  &remap_star  &remap_opening_bracket  &remap_closing_bracket  &kp MINUS
+&kp TAB    &kp Q      &kp W      &kp E        &kp R          &kp T         &kp GRAVE                                                       &none      &kp Y         &kp U             &kp I        &kp O                   &kp P                   &kp BSLH
+&kp ESC    &kp A      &kp S      &kp D        &kp F          &kp G         &kp INSERT  &kp LCTRL  &kp DELETE      &kp LGUI   &kp LEFT_ALT  &none      &kp H         &kp J             &kp K        &kp L                   &kp SEMI                &kp SQT
+&kp LSHFT  &kp Z      &kp X      &kp C        &kp V          &kp B                                &kp HOME        &kp PG_UP                           &kp N         &kp M             &kp COMMA    &kp DOT                 &kp FSLH                &kp RSHFT
+&mo 2      &backtick  &kp PIPE   &kp LEFT     &kp RIGHT                    &kp BSPC    &kp RALT   &kp END         &kp PG_DN  &kp ENTER     &kp SPACE                &kp UP            &kp DOWN     &remap_opening_cascet   &remap_closing_cascet   &mo 2
             >;
         };
 

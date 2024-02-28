@@ -46,7 +46,7 @@
         remap_star: remap_star {
             compatible = "zmk,behavior-mod-morph";
             label = "REMAP_STAR";
-            bindings = <&kp NUMBER_8>, <&kp SEMI>;
+            bindings = <&kp NUMBER_8>, <&kp SLASH>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
@@ -126,7 +126,7 @@
         remap_opening_bracket: remap_opening_bracket {
             compatible = "zmk,behavior-mod-morph";
             label = "REMAP_OPENING_BRACKET";
-            bindings = <&kp NUMBER_9>, <&kp G>;
+            bindings = <&kp NUMBER_9>, <&kp B>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;

@@ -313,7 +313,7 @@
         alt-gr {
             bindings = <
 &trans   &trans      &at     &hash   &dollar  &tilda  &trans                                      &trans  &caret  &ampersand  &star      &openingBracket  &closingBracket  &trans
-&switch  &backslash  &pipe   &trans  &trans   &trans  &trans                                      &trans  &trans  &trans      &trans     &trans           &trans           &trans
+&switch  &backslash  &pipe   &trans  &trans   &trans  &trans                                      &trans  &trans  &trans      &trans     &trans           &trans           &backtick
 &trans   &trans      &trans  &trans  &trans   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans      &trans     &trans           &trans           &trans
 &trans   &trans      &trans  &trans  &trans   &trans                  &trans      &trans                  &trans  &trans      &lessThan  &greatThen       &trans           &trans
 &trans   &trans      &trans  &trans  &trans           &trans  &trans  &trans      &trans  &trans  &trans          &trans      &trans     &openingCascet   &closingCascet   &trans

@@ -241,7 +241,7 @@
         backtick: backtick {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(NUMBER_7)>;
+            bindings = <&kp GRAVE>;
             label = "BACKTICK";
         };
 
